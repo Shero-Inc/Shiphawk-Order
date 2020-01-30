@@ -174,7 +174,8 @@ class SendOrder implements ObserverInterface
             'state'             => $address->getRegionCode(),
             'country'           => $address->getCountryId(),
             'zip'               => $address->getPostcode(),
-            'email'             => $address->getEmail()
+            'email'             => $address->getEmail(),
+            'is_residential'    => 'true'
         );
     }
 
